@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+rectangle "Empresa pedidos"{
+(Introducir pedido)
+(Cancelar pedido)
+(Obtener estado pedido)
+(Borrar pedido)
+(Buscar pedidos)
+(Alta cliente)
+(Buscar cliente)
+(Nuevo producto)
+(Borrar producto)
+}
+:Empleado: -- (Introducir pedido)
+:Empleado: -- (Cancelar pedido)
+:Empleado: -- (Obtener estado pedido)
+:Empleado: -- (Borrar pedido)
+:Empleado: -- (Buscar pedidos)
+:Empleado: -- (Alta cliente)
+:Empleado: -- (Buscar cliente)
+:Administrador: -- (Nuevo producto)
+:Administrador: -- (Borrar producto)
+@enduml
