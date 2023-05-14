@@ -1,0 +1,8 @@
+@startuml
+:Cliente Bancario: as cb
+:Cliente Normal: as cn
+note right of cb : Actor antecesor
+note right of cn : Actor descendiente
+cb <|-- :Cliente corporativo:
+cb <|-- cn
+@enduml
