@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+:socio: as soc
+:bibliotecario: as bib
+rectangle biblioteca{
+(reservar libro) as res
+(devolver libro) as dev
+(prestar libro) as pres
+(actualizar catalogo) as act
+}
+soc -- res
+soc -- pres
+soc -- dev
+bib -- pres
+bib -- act
+@enduml
